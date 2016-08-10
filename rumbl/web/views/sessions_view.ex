@@ -1,4 +1,4 @@
 defmodule Rumble.SessionView do
-  user Rumbl.Web, :view
+  use Rumbl.Web, :view
 end
 
