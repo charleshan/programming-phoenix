@@ -21,6 +21,6 @@ defmodule Rumbl.Category do
   end
 
   def names_and_ids(query) do
-    from c in query, select: {c.anme, c.id}
+    from c in query, select: {c.name, c.id}
   end
 end
