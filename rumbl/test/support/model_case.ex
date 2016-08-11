@@ -21,6 +21,7 @@ defmodule Rumbl.ModelCase do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
+      import Rumbl.TestHelpers
       import Rumbl.ModelCase
     end
   end
