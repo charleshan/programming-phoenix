@@ -1,5 +1,6 @@
 defmodule Rumbl.Video do
   use Rumbl.Web, :model
+  @primary_key {:id, Rumbl.Permalink, autogenerate: true}
 
   schema "videos" do
     field :url, :string
