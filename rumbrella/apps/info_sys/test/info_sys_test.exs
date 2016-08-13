@@ -1,6 +1,6 @@
 defmodule InfoSysTest do
   use ExUnit.Case
-  alias InfoSys.Results
+  alias InfoSys.Result
 
   defmodule TestBackend do
     def start_link(query, ref, owner, limit) do
@@ -16,7 +16,7 @@ defmodule InfoSysTest do
 
   test "compute/2 with backend results" do
     assert [%Result{backend: "test", text: "result"}] =
-      InfoSys.computer("result", backends: [TestBackend])
+      InfoSys.compute("result", backends: [TestBackend])
   end
 
   test "compute/2 with no backend results" do
