@@ -16,6 +16,15 @@ defmodule InfoSysTest do
       send(owner, {:backend, self()})
       :timer.sleep(:infinity)
     end
+    def fetch("boom", _ref, _owner, _limit) do
+      raise "boom!"
+    end
+  end
+
+  test "compute/2 discards backend errors" do
+    assert InfoSys.compute("boom", backends: [TestBackend]) == []
+    refute_received {:DOWN, _, _, _, _}
+    refute_received :timeout
   end
 
   test "compute/2 with timeout returns no results and kills workers" do
