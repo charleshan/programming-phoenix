@@ -31,3 +31,5 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+Disclaimer: the most up-to-date source code will be found on the official Pragprog website but please do feel free to create github issues if you run accross any problems.
