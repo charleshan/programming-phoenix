@@ -8,7 +8,7 @@ This repository contains the source code for [Programming Phoenix](https://pragp
 2. Goto to a section
   * The book uses file path of the source code to indicate the code changes.
   ![img_0009](https://cloud.githubusercontent.com/assets/3143154/17651475/869ab072-621c-11e6-87c3-fa7b54d0be75.jpg)
-  * Goto the state of the project with `git checkout TAG_NAME`
+  * Goto any state of the project with `git checkout TAG_NAME`
   * e.g. `git checkout channels/listings/rumbl/web/static/js/video.change6.js`
 3. To start your Phoenix app:
   * Goto the sub-project directory (hello, rumbl, or rumbrella) with `cd PATH`
